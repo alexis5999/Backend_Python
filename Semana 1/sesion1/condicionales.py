@@ -59,7 +59,7 @@ edad_min = 18
 # continue
 for i in range(14):
      if i== 15:
-     continue
+       continue
      print(i) 
 
 # while es un bucle que se va a ralizar de manera infinita mientras
