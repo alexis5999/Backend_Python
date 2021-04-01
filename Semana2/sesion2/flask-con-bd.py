@@ -39,6 +39,7 @@ def categorias():
         data = request.get_json()
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO T_CATEGORIAS (CAT_DESC) VALUES (%s)",(data['descripcion'],))
+        # %s  esto significa poder pasar como parámetros a la base de datos.
         # sirve para guardar los cambios que estamos haciendo en la base de datos
         mysql.connection.commit()
         cur.close()
