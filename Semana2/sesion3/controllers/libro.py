@@ -220,4 +220,4 @@ class EncontrarLibroController(Resource):
                 'Ok':False,
                 'content':None,
                 'message':'No se encontro ninguna coincidencia'
-            }
+            }, 404
