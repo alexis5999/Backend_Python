@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "b6541727-2b34-402d-896a-f28109baa586",
+		"name": "LIBRO_AUTOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE ESTANTE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/estante/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"estante",
+						"1"
+					]
+				},
+				"description": "http://127.0.0.1:5000/estante/1"
+			},
+			"response": []
+		},
+		{
+			"name": "POST LIBRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{\r\n    \"nombre\": \"COELO\",\r\n    \"editorial\": \"Lumbreras\",\r\n    \"numpaginas\": 4,\r\n    \"precio\": 50.5,\r\n    \"publicacion\":\"pu\",\r\n    \"codigo\":\"1234\",\r\n    \"estante\": 1,\r\n    \"estado\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/libro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"libro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT ESTANTE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"capacidad\": 5,\r\n    \"ubicacion\": \"Lima\",\r\n    \"descripcion\": \"CODIGO\",\r\n    \"estado\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/estante/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"estante",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ESTANTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/estante",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"estante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ESTANTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"capacidad\": 3,\r\n    \"ubicacion\": \"Ica\",\r\n    \"descripcion\": \"CODIGO\",\r\n    \"estado\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/estante",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"estante"
+					]
+				},
+				"description": "POST ESTANTE"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT LIBRO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"nombre\": \"Fuente Oveguna\",\r\n    \"editorial\": \"Navarrete\",\r\n    \"numpaginas\": 8,\r\n    \"precio\": 20.5,\r\n    \"publicacion\":2020,\r\n    \"codigo\":\"658\",\r\n    \"estado\":1,\r\n    \"est_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/libro/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"libro",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE LIBRO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/libro/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"libro",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET LIBRO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/libro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"libro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUSQUEDA POR NOMBRE DE LIBRO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/libro/Fuente",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"libro",
+						"Fuente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
