@@ -66,7 +66,7 @@ class EstantesController(Resource):
 class EstanteController(Resource):
     def get(self, est_id):
         estante = EstanteModel.query.filter_by(id=est_id).first()
-        print(estante.libros)
+        #print(estante.libros)
         if estante:
             return {
                 'ok':True,
