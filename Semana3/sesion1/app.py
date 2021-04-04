@@ -20,7 +20,7 @@ def iniciador():
     # Aca se conecta al servidor
     db.init_app(app)
     # Eliminacion de los modelos, x defecto elimina todos
-    # db.drop_all(app=app)
+    #db.drop_all(app=app)
     # Creacion de los Modelos
     db.create_all(app=app)
 
