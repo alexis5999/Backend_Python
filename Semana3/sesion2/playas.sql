@@ -1,8 +1,8 @@
 -- Creación de la tabla playa en la BD MYSQL
 CREATE DATABASE PLAYA;
-
+USE PLAYA;
 create table t_vehiculo(
-   veh_id int not null auto_increment;
+   veh_id int not null auto_increment,
    veh_placa varchar(6),
    veh_marca varchar(30),
    veh_anio year,
@@ -24,8 +24,8 @@ create table t_registro(
   playa_id int,
   veh_id int,
   foreign key (playa_id) references t_playa(playa_id),
-  foreign key (veh_id) references t_vehiculo(veh_id),
-)
+  foreign key (veh_id) references t_vehiculo(veh_id)
+);
 
 -- Insertar  datos a la tabla t_vehiculo
  insert into t_vehiculo
